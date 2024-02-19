@@ -1,0 +1,34 @@
+.user-list{
+    padding: 10px 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+.user-list ul{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:18px;
+}
+
+.user-list ul a{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:20px;
+}
+
+.user-list ul a:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .user-list ul { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 400px) {
+    .user-list ul { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 250px) {
+    .user-list ul { grid-template-columns: repeat(1, 1fr); }
+}
